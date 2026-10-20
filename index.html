@@ -66,19 +66,17 @@
           <span class="text-xl font-black text-gray-900 dark:text-white tracking-tight">Biga<span class="text-yellow-500">Connect</span></span>
           <div class="animate-bee">
             <svg class="w-7 h-7 drop-shadow-sm" viewBox="0 0 100 100" fill="none">
-              <ellipse class="bee-wing" cx="42" cy="28" rx="14" ry="22" fill="#E0F2FE" opacity="0.8" transform="rotate(-20 42 28)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse class="bee-wing" cx="58" cy="26" rx="12" ry="18" fill="#E0F2FE" opacity="0.7" transform="rotate(15 58 26)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse cx="50" cy="58" rx="30" ry="24" fill="#FACC15" stroke="#EAB308" stroke-width="3"/>
-              <path d="M42 36 C44 48, 44 68, 42 80" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M56 35 C58 48, 58 68, 56 81" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M80 58 L92 58 L80 62 Z" fill="#1F2937"/>
-              <circle cx="26" cy="54" r="16" fill="#FACC15" stroke="#EAB308" stroke-width="2"/>
-              <circle cx="22" cy="50" r="4" fill="#1F2937"/>
-              <circle cx="20" cy="48" r="1.5" fill="white"/>
-              <circle cx="26" cy="60" r="3" fill="#F87171" opacity="0.6"/>
-              <path d="M18 58 Q22 64 26 58" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M22 40 Q16 30 12 32" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <circle cx="11" cy="32" r="2.5" fill="#1F2937"/>
+              <path class="gull-wing" d="M50 52 C34 30 14 26 4 34 C18 36 30 46 44 60 Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 34 C8 31 12 29 15 26 C10 27 6 30 4 34 Z" fill="#374151"/>
+              <path d="M78 60 L95 66 L80 69 Z" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1.5" stroke-linejoin="round"/>
+              <ellipse cx="54" cy="60" rx="26" ry="13" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path class="gull-wing" d="M52 54 C62 30 82 20 96 24 C84 30 74 42 62 62 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M96 24 C92 23 88 23 85 25 C89 26 93 25 96 24 Z" fill="#374151"/>
+              <circle cx="30" cy="54" r="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path d="M21 52 L7 56 L21 59 Z" fill="#FACC15" stroke="#EAB308" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="12" cy="57.3" r="1.5" fill="#EF4444"/>
+              <circle cx="27" cy="51" r="2.2" fill="#1F2937"/>
+              <circle cx="26.3" cy="50.2" r=".7" fill="#fff"/>
             </svg>
           </div>
         </div>
@@ -87,22 +85,14 @@
 
       <nav class="space-y-2">
         <button onclick="switchTab('timeline'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm bg-yellow-400 text-gray-900 shadow-sm"><i class="fa-solid fa-house text-lg"></i><span>Akış</span></button>
-        <button onclick="switchTab('profile'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700"><i class="fa-solid fa-user text-lg text-yellow-600"></i><span>Profilim</span></button>
         <button onclick="switchTab('explore'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700"><i class="fa-solid fa-compass text-lg text-yellow-600"></i><span>Keşfet & Gündem</span></button>
-        <button onclick="switchTab('bookmarks'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700"><i class="fa-solid fa-bookmark text-lg text-yellow-600"></i><span>Kaydedilenler</span></button>
-        <button onclick="switchTab('notifications'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700"><i class="fa-solid fa-bell text-lg text-yellow-600"></i><span>Bildirimler</span></button>
         <button onclick="switchTab('map'); closeMobileDrawer();" class="menu-btn-mobile w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700"><i class="fa-solid fa-map-location-dot text-lg text-yellow-600"></i><span>Kampüs Haritası</span></button>
       </nav>
     </div>
 
     <div class="pt-4 border-t border-yellow-100 dark:border-gray-700 space-y-3">
       <button onclick="toggleDarkMode()" class="w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-bold bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200"><span class="flex items-center gap-2"><i class="fa-solid fa-moon text-yellow-600"></i><span>Gece / Gündüz Modu</span></span></button>
-      <div id="mobileDrawerAuthGroup" class="grid grid-cols-2 gap-2">
-        <button onclick="openAuthModal('login'); closeMobileDrawer();" class="py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white font-extrabold rounded-xl text-xs text-center">Giriş Yap</button>
-        <button onclick="openAuthModal('register'); closeMobileDrawer();" class="py-2.5 bg-yellow-400 text-gray-900 font-extrabold rounded-xl text-xs text-center">Kaydol</button>
-      </div>
-      <button id="mobileDrawerLogoutBtn" onclick="handleLogout(); closeMobileDrawer();" class="w-full py-2.5 bg-red-100 text-red-700 font-extrabold rounded-xl text-xs hidden">Çıkış Yap</button>
-    </div>
+                </div>
   </aside>
 
   <div class="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-screen">
@@ -114,41 +104,31 @@
           <span class="text-2xl font-black text-gray-900 dark:text-white tracking-tight cursor-pointer" onclick="switchTab('timeline')">Biga<span class="text-yellow-500">Connect</span></span>
           <div class="relative animate-bee">
             <svg class="w-11 h-11 drop-shadow-md" viewBox="0 0 100 100" fill="none">
-              <ellipse class="bee-wing" cx="42" cy="28" rx="14" ry="22" fill="#E0F2FE" opacity="0.8" transform="rotate(-20 42 28)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse class="bee-wing" cx="58" cy="26" rx="12" ry="18" fill="#E0F2FE" opacity="0.7" transform="rotate(15 58 26)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse cx="50" cy="58" rx="30" ry="24" fill="#FACC15" stroke="#EAB308" stroke-width="3"/>
-              <path d="M42 36 C44 48, 44 68, 42 80" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M56 35 C58 48, 58 68, 56 81" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M80 58 L92 58 L80 62 Z" fill="#1F2937"/>
-              <circle cx="26" cy="54" r="16" fill="#FACC15" stroke="#EAB308" stroke-width="2"/>
-              <circle cx="22" cy="50" r="4" fill="#1F2937"/>
-              <circle cx="20" cy="48" r="1.5" fill="white"/>
-              <circle cx="26" cy="60" r="3" fill="#F87171" opacity="0.6"/>
-              <path d="M18 58 Q22 64 26 58" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M22 40 Q16 30 12 32" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <circle cx="11" cy="32" r="2.5" fill="#1F2937"/>
+              <path class="gull-wing" d="M50 52 C34 30 14 26 4 34 C18 36 30 46 44 60 Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 34 C8 31 12 29 15 26 C10 27 6 30 4 34 Z" fill="#374151"/>
+              <path d="M78 60 L95 66 L80 69 Z" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1.5" stroke-linejoin="round"/>
+              <ellipse cx="54" cy="60" rx="26" ry="13" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path class="gull-wing" d="M52 54 C62 30 82 20 96 24 C84 30 74 42 62 62 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M96 24 C92 23 88 23 85 25 C89 26 93 25 96 24 Z" fill="#374151"/>
+              <circle cx="30" cy="54" r="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path d="M21 52 L7 56 L21 59 Z" fill="#FACC15" stroke="#EAB308" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="12" cy="57.3" r="1.5" fill="#EF4444"/>
+              <circle cx="27" cy="51" r="2.2" fill="#1F2937"/>
+              <circle cx="26.3" cy="50.2" r=".7" fill="#fff"/>
             </svg>
           </div>
         </div>
 
         <nav class="space-y-1.5">
           <button onclick="switchTab('timeline')" id="menuTimeline" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm bg-yellow-400 text-gray-900 shadow-sm transition"><i class="fa-solid fa-house text-lg"></i><span>Akış</span></button>
-          <button onclick="switchTab('profile')" id="menuProfile" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700 transition"><i class="fa-solid fa-user text-lg text-yellow-600"></i><span>Profilim</span></button>
           <button onclick="switchTab('explore')" id="menuExplore" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700 transition"><i class="fa-solid fa-compass text-lg text-yellow-600"></i><span>Keşfet & Gündem</span></button>
-          <button onclick="switchTab('bookmarks')" id="menuBookmarks" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700 transition"><i class="fa-solid fa-bookmark text-lg text-yellow-600"></i><span>Kaydedilenler</span></button>
-          <button onclick="switchTab('notifications')" id="menuNotifications" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700 transition"><i class="fa-solid fa-bell text-lg text-yellow-600"></i><span>Bildirimler</span></button>
           <button onclick="switchTab('map')" id="menuMap" class="menu-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-sm text-gray-700 dark:text-gray-200 hover:bg-yellow-100 dark:hover:bg-gray-700 transition"><i class="fa-solid fa-map-location-dot text-lg text-yellow-600"></i><span>Kampüs Haritası</span></button>
         </nav>
       </div>
 
       <div class="pt-4 border-t border-yellow-100 dark:border-gray-700 space-y-2">
         <button onclick="toggleDarkMode()" class="w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-bold bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-yellow-200 dark:hover:bg-gray-600 transition"><span class="flex items-center gap-2"><i id="themeIcon" class="fa-solid fa-moon text-yellow-600"></i><span id="themeText">Gece Modu</span></span><i class="fa-solid fa-circle-half-stroke text-gray-400"></i></button>
-        <div id="authButtonsGroup" class="grid grid-cols-2 gap-2">
-          <button onclick="openAuthModal('login')" class="py-2 px-2 bg-gray-100 dark:bg-gray-700 hover:bg-yellow-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-extrabold rounded-xl text-[11px] transition text-center shadow-sm">Giriş Yap</button>
-          <button onclick="openAuthModal('register')" class="py-2 px-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-extrabold rounded-xl text-[11px] transition text-center shadow-sm">Hesap Oluştur</button>
-        </div>
-        <button id="logoutBtn" onclick="handleLogout()" class="w-full py-2 bg-red-100 dark:bg-red-900/30 hover:bg-red-200 dark:hover:bg-red-900/50 text-red-700 dark:text-red-300 font-extrabold rounded-xl text-xs transition hidden"><i class="fa-solid fa-right-from-bracket mr-1"></i> Çıkış Yap</button>
-      </div>
+                      </div>
     </aside>
 
     <!-- ORTA İÇERİK ALANI -->
@@ -162,98 +142,45 @@
           
           <div class="lg:hidden relative animate-bee ml-1">
             <svg class="w-8 h-8 drop-shadow-md" viewBox="0 0 100 100" fill="none">
-              <ellipse class="bee-wing" cx="42" cy="28" rx="14" ry="22" fill="#E0F2FE" opacity="0.8" transform="rotate(-20 42 28)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse class="bee-wing" cx="58" cy="26" rx="12" ry="18" fill="#E0F2FE" opacity="0.7" transform="rotate(15 58 26)" stroke="#BAE6FD" stroke-width="2"/>
-              <ellipse cx="50" cy="58" rx="30" ry="24" fill="#FACC15" stroke="#EAB308" stroke-width="3"/>
-              <path d="M42 36 C44 48, 44 68, 42 80" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M56 35 C58 48, 58 68, 56 81" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
-              <path d="M80 58 L92 58 L80 62 Z" fill="#1F2937"/>
-              <circle cx="26" cy="54" r="16" fill="#FACC15" stroke="#EAB308" stroke-width="2"/>
-              <circle cx="22" cy="50" r="4" fill="#1F2937"/>
-              <circle cx="20" cy="48" r="1.5" fill="white"/>
-              <circle cx="26" cy="60" r="3" fill="#F87171" opacity="0.6"/>
-              <path d="M18 58 Q22 64 26 58" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M22 40 Q16 30 12 32" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-              <circle cx="11" cy="32" r="2.5" fill="#1F2937"/>
+              <path class="gull-wing" d="M50 52 C34 30 14 26 4 34 C18 36 30 46 44 60 Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 34 C8 31 12 29 15 26 C10 27 6 30 4 34 Z" fill="#374151"/>
+              <path d="M78 60 L95 66 L80 69 Z" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1.5" stroke-linejoin="round"/>
+              <ellipse cx="54" cy="60" rx="26" ry="13" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path class="gull-wing" d="M52 54 C62 30 82 20 96 24 C84 30 74 42 62 62 Z" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M96 24 C92 23 88 23 85 25 C89 26 93 25 96 24 Z" fill="#374151"/>
+              <circle cx="30" cy="54" r="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+              <path d="M21 52 L7 56 L21 59 Z" fill="#FACC15" stroke="#EAB308" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="12" cy="57.3" r="1.5" fill="#EF4444"/>
+              <circle cx="27" cy="51" r="2.2" fill="#1F2937"/>
+              <circle cx="26.3" cy="50.2" r=".7" fill="#fff"/>
             </svg>
           </div>
         </div>
         
-        <div onclick="handleHeaderProfileClick()" class="flex items-center gap-2.5 bg-white dark:bg-gray-800 border-2 border-yellow-300 dark:border-yellow-500/50 px-2.5 py-1.5 rounded-full cursor-pointer hover:bg-yellow-50 dark:hover:bg-gray-700 transition shadow-sm">
-          <div id="userAvatarHeader" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-200 dark:bg-amber-800/80 text-amber-700 dark:text-amber-200 flex items-center justify-center font-bold text-xs border border-amber-300 dark:border-amber-700 overflow-hidden relative">
-            <span id="userAvatarHeaderInitials" class="w-full h-full flex items-center justify-center overflow-hidden">
-              <svg viewBox="0 0 100 100" class="w-full h-full fill-amber-500 dark:fill-amber-400">
-                <circle cx="50" cy="38" r="22"/>
-                <path d="M15 88 C15 65, 35 60, 50 60 C65 60, 85 65, 85 88 Z"/>
-              </svg>
-            </span>
-            <img id="userAvatarHeaderImg" src="" class="w-full h-full object-cover hidden" alt="Avatar">
-          </div>
-          <div id="userHeaderInfoGroup" class="hidden sm:block text-left">
-            <h4 id="userNameHeader" class="font-bold text-xs text-gray-900 dark:text-white leading-tight">Giriş Yapılmadı</h4>
-            <span id="userHandleHeader" class="text-[10px] text-gray-400 block">@hesap_yok</span>
-          </div>
-          <i id="userHeaderGearIcon" class="fa-solid fa-right-to-bracket text-xs text-yellow-600 ml-0.5"></i>
-        </div>
+              </div>
+
+      <!-- ELE GEÇİRİLEN ANA SAYFA MESAJI -->
+      <div id="hkBanner" class="mb-4 sm:mb-6 rounded-2xl border-2 border-yellow-400 dark:border-yellow-500 bg-gray-900 text-white p-5 sm:p-7 shadow-lg relative overflow-hidden">
+        <i class="fa-solid fa-quote-left text-yellow-400 text-xl sm:text-2xl mb-3 block"></i>
+        <p class="hk-qtext text-lg sm:text-2xl font-black leading-snug tracking-tight">Seni diğerlerinden farksız kılmak için gece gündüz elinden geleni yapan bir dünyada, kendin olarak kalabilmek; dünyanın en zor savaşını vermek demektir.</p>
+        <p class="hk-qtext mt-3 text-xs sm:text-sm font-bold text-yellow-400">— E. E. Cummings</p>
       </div>
 
       <!-- 1. AKIŞ SEKMESİ -->
       <div id="contentTimeline" class="page-content space-y-4 sm:space-y-5">
-        <div class="bg-white dark:bg-gray-800 rounded-2xl p-3 sm:p-4 shadow-sm border-2 border-yellow-200 dark:border-gray-700 relative">
-          
-          <div id="postAreaOverlay" class="absolute inset-0 bg-white/90 dark:bg-gray-800/90 backdrop-blur-[2px] z-10 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
-            <div class="w-12 h-12 rounded-2xl bg-yellow-100 dark:bg-gray-700 text-yellow-600 dark:text-yellow-400 flex items-center justify-center text-xl mb-2 shadow-sm"><i class="fa-solid fa-lock"></i></div>
-            <h4 class="font-extrabold text-sm text-gray-900 dark:text-white">Paylaşım yapmak için üye olun</h4>
-            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 mb-3">Akışta düşüncelerini paylaşmak ve vızıldamak için giriş yapın.</p>
-            <div class="flex gap-2">
-              <button onclick="openAuthModal('login')" class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white font-bold rounded-xl text-xs hover:bg-yellow-200 transition">Giriş Yap</button>
-              <button onclick="openAuthModal('register')" class="px-3 py-1.5 bg-yellow-400 text-gray-900 font-black rounded-xl text-xs hover:bg-yellow-500 transition shadow-sm">Hesap Oluştur</button>
-            </div>
-          </div>
-
-          <textarea id="postText" rows="3" placeholder="Biga kampüsünde ne oluyor? @kullaniciadi ile mention atabilirsin..." class="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none text-sm dark:text-white"></textarea>
-          
-          <!-- Gönderi Fotoğraf Önizleme -->
-          <div id="postImagePreviewContainer" class="hidden relative mt-2 w-32 h-32 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-            <img id="postImagePreview" src="" class="w-full h-full object-cover">
-            <button onclick="removePostImage()" class="absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs"><i class="fa-solid fa-xmark"></i></button>
-          </div>
-
-          <div class="flex justify-between items-center mt-3 pt-2 border-t border-gray-100 dark:border-gray-700">
-            <div class="flex gap-4 text-gray-400 text-base">
-              <label class="cursor-pointer hover:text-yellow-600 transition">
-                <i class="fa-regular fa-image"></i>
-                <input type="file" id="postImageInput" accept="image/*" class="hidden" onchange="handlePostImageSelect(event)">
-              </label>
-              <button class="hover:text-yellow-600 transition"><i class="fa-solid fa-location-dot"></i></button>
-            </div>
-            <button onclick="sharePost()" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-extrabold px-5 sm:px-6 py-2 rounded-xl text-xs sm:text-sm transition-transform active:scale-95 shadow">Paylaş 🚀</button>
-          </div>
-        </div>
-
+        
         <div id="timeline" class="space-y-4">
           <div id="emptyState" class="text-center py-12 bg-white dark:bg-gray-800 rounded-2xl border-2 border-dashed border-yellow-200 dark:border-gray-700 p-6 flex flex-col items-center justify-center">
             <i class="fa-solid fa-bug text-4xl text-yellow-500 mb-3 drop-shadow-sm"></i>
-            <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm sm:text-base">Henüz bir vızıldı yok!</h3>
-            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Kampüste ilk paylaşımı yapan sen ol.</p>
+            <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm sm:text-base">Henüz bir paylaşım yok.</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Kampüsten haberler burada görünecek.</p>
           </div>
         </div>
       </div>
 
       <!-- 2. PROFİL SEKMESİ (Kendi Profilimiz Veya Ziyaret Edilen Profil) -->
       <div id="contentProfile" class="page-content hidden space-y-4">
-        <div id="profileLoggedOutView" class="bg-white dark:bg-gray-800 p-8 sm:p-12 rounded-2xl border-2 border-yellow-200 dark:border-gray-700 shadow-sm text-center flex flex-col items-center justify-center space-y-4">
-          <div class="w-16 h-16 rounded-3xl bg-yellow-100 dark:bg-gray-700 text-yellow-600 dark:text-yellow-400 flex items-center justify-center text-3xl shadow-sm"><i class="fa-solid fa-user-lock"></i></div>
-          <div class="max-w-xs space-y-1">
-            <h3 class="font-black text-lg text-gray-900 dark:text-white">Profiline Erişmek İçin Giriş Yap</h3>
-            <p class="text-xs text-gray-500 dark:text-gray-400">Profilini özelleştirmek, fotoğraf eklemek ve paylaşımlarını yönetmek için hesabına giriş yapmalısın.</p>
-          </div>
-          <div class="flex gap-3 pt-2">
-            <button onclick="openAuthModal('login')" class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white font-extrabold rounded-xl text-xs hover:bg-yellow-200 transition">Giriş Yap</button>
-            <button onclick="openAuthModal('register')" class="px-5 py-2.5 bg-yellow-400 text-yellow-900 font-black rounded-xl text-xs transition shadow-sm">Hesap Oluştur</button>
-          </div>
-        </div>
-
+        
         <div id="profileLoggedInView" class="hidden space-y-4">
           <div class="bg-white dark:bg-gray-800 rounded-2xl border-2 border-yellow-200 dark:border-gray-700 overflow-hidden shadow-sm">
             <div id="profileBanner" class="h-32 sm:h-44 bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 relative cursor-pointer group" onclick="checkAndTriggerBannerUpload()" title="Banner değiştirmek için tıkla">
@@ -284,7 +211,7 @@
                 <div class="flex items-center gap-2">
                   <span id="profileAccountTypeBadge" class="text-[11px] font-bold px-3 py-1 rounded-full bg-yellow-100 dark:bg-gray-700 text-yellow-800 dark:text-yellow-300">Açık Hesap</span>
                   <button id="profileEditBtn" onclick="openProfileModal()" class="px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-yellow-400 hover:text-gray-900 text-gray-800 dark:text-white font-extrabold rounded-full text-xs sm:text-sm border border-gray-200 dark:border-gray-600 transition shadow-sm"><i class="fa-solid fa-pen-to-square mr-1"></i> Profili Düzenle</button>
-                  <button id="profileBuzzBtn" onclick="buzzUser()" class="hidden px-5 py-2 bg-amber-100 hover:bg-yellow-300 text-amber-900 font-black rounded-full text-xs sm:text-sm shadow-sm transition active:scale-95">🐝 Vızzla</button>
+                  <button id="profileBuzzBtn" onclick="buzzUser()" class="hidden px-5 py-2 bg-amber-100 hover:bg-yellow-300 text-amber-900 font-black rounded-full text-xs sm:text-sm shadow-sm transition active:scale-95">🐦 Vızzla</button>
                   <button id="profileExternalFollowBtn" onclick="toggleFollowExternalProfile()" class="hidden px-5 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-black rounded-full text-xs sm:text-sm shadow-sm transition">Takip Et</button>
                 </div>
               </div>
@@ -300,7 +227,7 @@
               </div>
 
               <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
-                <p id="profileBioDisplay" class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium">Henüz bir biyografi eklenmedi. Biga kampüsünde vızıldamaya hazır! 🐝</p>
+                <p id="profileBioDisplay" class="text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed font-medium">Henüz bir biyografi eklenmedi. Biga kampüsünde vızıldamaya hazır! 🐦</p>
               </div>
 
               <div class="flex gap-4 mt-3 text-xs text-gray-500 dark:text-gray-400 font-bold">
@@ -376,7 +303,7 @@
           <div style="display:none" class="relative w-full h-[380px] sm:h-[440px] bg-gradient-to-br from-yellow-100 via-amber-50 to-yellow-200 dark:from-gray-800 dark:via-gray-900 dark:to-yellow-950/30 rounded-2xl border-2 border-dashed border-yellow-400 dark:border-yellow-600 flex flex-col items-center justify-center p-4 sm:p-6 text-center overflow-hidden shadow-inner coming-soon-card">
             <div class="w-16 h-16 sm:w-20 sm:h-20 bg-yellow-400/90 text-gray-900 rounded-3xl flex items-center justify-center text-3xl sm:text-4xl shadow-xl border-2 border-yellow-500 mb-3 sm:mb-4 animate-bounce">📍</div>
             <span class="text-[10px] sm:text-xs font-black uppercase tracking-widest text-yellow-700 dark:text-yellow-400 bg-yellow-200 dark:bg-yellow-900/50 px-3 py-1 rounded-full mb-2">BigaConnect Canlı Radar</span>
-            <h3 class="text-xl sm:text-2xl font-black text-gray-900 dark:text-white tracking-tight mb-2">Çok Yakında! 🐝✨</h3>
+            <h3 class="text-xl sm:text-2xl font-black text-gray-900 dark:text-white tracking-tight mb-2">Çok Yakında! 🐦✨</h3>
             <p class="text-xs text-gray-600 dark:text-gray-300 max-w-md leading-relaxed font-medium mb-4">ÇOMÜ Biga Ramazan Aydın Yerleşkesi’nde arkadaşlarının anlık konumlarını harita üzerinde görebileceğin interaktif radar sistemi çok yakında!</p>
           </div>
         </div>
@@ -395,7 +322,7 @@
         <div class="pt-2 text-center py-6 bg-yellow-50/50 dark:bg-gray-700/30 rounded-xl border border-dashed border-yellow-200 dark:border-gray-600">
           <span class="text-2xl mb-1 block">🏆</span>
           <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Kürsü henüz boş!</h4>
-          <p class="text-[10px] text-gray-400 mt-0.5">İlk vızıldayan sen ol, haftanın arısı seçil!</p>
+          <p class="text-[10px] text-gray-400 mt-0.5">İlk vızıldayan sen ol, haftanın martısı seçil!</p>
         </div>
       </div>
 
@@ -405,130 +332,13 @@
           <span class="text-[10px] bg-yellow-100 dark:bg-gray-700 text-yellow-800 dark:text-yellow-400 px-2 py-0.5 rounded-full font-bold">Biga Kampüs</span>
         </div>
         <div class="text-center py-6 bg-gray-50/50 dark:bg-gray-700/30 rounded-xl border border-dashed border-gray-200 dark:border-gray-600">
-          <span class="text-2xl mb-1 block">🐝</span>
+          <span class="text-2xl mb-1 block">🐦</span>
           <h4 class="font-bold text-xs text-gray-800 dark:text-gray-200">Henüz katılım yok</h4>
           <p class="text-[10px] text-gray-400 mt-0.5">Arkadaşlarını BigaConnect'e davet et!</p>
         </div>
       </div>
     </aside>
 
-  </div>
-
-  <!-- GİRİŞ YAP MODALI -->
-  <div id="loginModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white dark:bg-gray-800 rounded-3xl p-6 max-w-sm w-full border-2 border-yellow-400 shadow-2xl relative">
-      <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark text-lg"></i></button>
-      <div class="text-center mb-5">
-        <div class="text-4xl mb-1">🐝</div>
-        <h3 class="font-black text-xl text-gray-900 dark:text-white">Giriş Yap</h3>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">E-posta adresin veya kullanıcı adınla giriş yap.</p>
-      </div>
-      <form onsubmit="handleLogin(event)" class="space-y-3">
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">E-posta veya Kullanıcı Adı</label>
-          <input type="text" id="loginIdentifier" required placeholder="ornek@gmail.com" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-sm dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Şifre</label>
-          <input type="password" id="loginPassword" required autocomplete="current-password" placeholder="Şifren" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-sm dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-        </div>
-        <button type="button" onclick="handleForgotPassword()" class="w-full text-center text-xs font-bold text-yellow-600 hover:underline">Şifremi unuttum</button>
-        <button type="submit" class="w-full py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-extrabold rounded-xl text-sm shadow transition">Giriş Yap</button>
-      </form>
-      <div class="text-center mt-4 pt-3 border-t border-gray-100 dark:border-gray-700">
-        <p class="text-xs text-gray-500 dark:text-gray-400">Hesabın yok mu? <a href="#" onclick="openAuthModal('register')" class="text-yellow-600 font-bold hover:underline">Kaydol</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- HESAP OLUŞTUR MODALI -->
-  <div id="registerModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white dark:bg-gray-800 rounded-3xl p-6 max-w-sm w-full border-2 border-yellow-400 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark text-lg"></i></button>
-      <div class="text-center mb-4">
-        <div class="text-3xl mb-1">🐝</div>
-        <h3 class="font-black text-xl text-gray-900 dark:text-white">Hesap Oluştur</h3>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Bulut tabanlı ortak hesap kaydı</p>
-      </div>
-      <form onsubmit="handleRegister(event)" class="space-y-2.5">
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Ad Soyad</label>
-          <input type="text" id="regName" required placeholder="Adın ve Soyadın" class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Kullanıcı Adı</label>
-          <div class="relative">
-            <span class="absolute left-3 top-2 text-xs text-gray-400">@</span>
-            <input type="text" id="regHandle" required minlength="3" maxlength="20" pattern="[A-Za-z0-9_]{3,20}" autocomplete="username" placeholder="kullanici_adi" class="w-full pl-7 pr-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-          </div>
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Bölümün</label>
-          <select id="regDept" required class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-            <option value="" disabled selected>Bölümünü Seç</option>
-            <optgroup label="İktisadi ve İdari Bilimler Fakültesi (İİBF)">
-              <option value="İktisat">İktisat</option>
-              <option value="İşletme">İşletme</option>
-              <option value="Uluslararası İlişkiler">Uluslararası İlişkiler</option>
-              <option value="Maliye">Maliye</option>
-              <option value="Çalışma Ekonomisi ve End. İlişkileri (ÇEKO)">Çalışma Ekonomisi ve End. İlişkileri (ÇEKO)</option>
-              <option value="Ekonometri">Ekonometri</option>
-              <option value="Siyaset Bilimi ve Kamu Yönetimi">Siyaset Bilimi ve Kamu Yönetimi</option>
-              <option value="Yönetim Bilişim Sistemleri (YBS)">Yönetim Bilişim Sistemleri (YBS)</option>
-            </optgroup>
-            <optgroup label="Uygulamalı Bilimler Fakültesi (UBF)">
-              <option value="Uluslararası Ticaret ve Lojistik">Uluslararası Ticaret ve Lojistik</option>
-              <option value="Finans ve Bankacılık">Finans ve Bankacılık</option>
-              <option value="Muhasebe ve Finans Yönetimi">Muhasebe ve Finans Yönetimi</option>
-              <option value="Gayrimenkul Gelişimi ve Yönetimi">Gayrimenkul Gelişimi ve Yönetimi</option>
-            </optgroup>
-            <optgroup label="Biga Meslek Yüksekokulu (MYO)">
-              <option value="Muhasebe ve Vergi Uygulamaları">Muhasebe ve Vergi Uygulamaları</option>
-              <option value="İşletme Yönetimi">İşletme Yönetimi</option>
-              <option value="Pazarlama">Pazarlama</option>
-              <option value="Otomotiv Teknolojisi">Otomotiv Teknolojisi</option>
-              <option value="Elektrik">Elektrik</option>
-              <option value="Makine">Makine</option>
-              <option value="Gıda Teknolojisi">Gıda Teknolojisi</option>
-              <option value="Süt ve Ürünleri Teknolojisi">Süt ve Ürünleri Teknolojisi</option>
-              <option value="Yerel Yönetimler">Yerel Yönetimler</option>
-              <option value="Kooperatifçilik">Kooperatifçilik</option>
-            </optgroup>
-          </select>
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Sınıfın</label>
-          <select id="regClass" required class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-            <option value="" disabled selected>Sınıfını Seç</option>
-            <option value="Hazırlık Sınıfı">Hazırlık Sınıfı</option>
-            <option value="1. Sınıf">1. Sınıf</option>
-            <option value="2. Sınıf">2. Sınıf</option>
-            <option value="3. Sınıf">3. Sınıf</option>
-            <option value="4. Sınıf">4. Sınıf</option>
-            <option value="Mezun">Mezun</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Hesap Gizliliği</label>
-          <select id="regPrivacy" required class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-            <option value="public" selected>Açık Hesap</option>
-            <option value="private">Gizli Hesap</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Gerçek E-posta Adresi</label>
-          <input type="email" id="regEmail" required placeholder="ornek@gmail.com" class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-        </div>
-        <div>
-          <label class="block text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Şifre</label>
-          <input type="password" id="regPassword" required minlength="8" autocomplete="new-password" placeholder="En az 8 karakter" class="w-full px-3.5 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:ring-2 focus:ring-yellow-400">
-        </div>
-        <button type="submit" class="w-full py-2.5 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-extrabold rounded-xl text-xs shadow transition mt-2">Kayıt Ol ve Katıl</button>
-      </form>
-      <div class="text-center mt-3 pt-2 border-t border-gray-100 dark:border-gray-700">
-        <p class="text-xs text-gray-500 dark:text-gray-400">Zaten hesabın var mı? <a href="#" onclick="openAuthModal('login')" class="text-yellow-600 font-bold hover:underline">Giriş Yap</a></p>
-      </div>
-    </div>
   </div>
 
   <!-- PROFİL DÜZENLEME MODALI -->
@@ -730,16 +540,6 @@
       document.getElementById('mobileDrawerBackdrop').classList.add('hidden');
     }
 
-    function handleHeaderProfileClick() {
-      if (isLoggedIn) {
-        viewingUserData = null; // Kendi profilimiz
-        renderProfileView(currentUserData);
-        switchTab('profile');
-      } else {
-        openAuthModal('login');
-      }
-    }
-
     const defaultYellowAvatarSVG = `<svg viewBox="0 0 100 100" class="w-full h-full"><defs><linearGradient id="bgAv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FEF08A"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs><rect width="100" height="100" fill="url(#bgAv)"/><path d="M50 4l12 7v14l-12 7-12-7V11zM80 44l12 7v14l-12 7-12-7V51zM20 44l12 7v14l-12 7-12-7V51z" fill="#fff" opacity=".25"/><ellipse cx="38" cy="30" rx="11" ry="17" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="2" transform="rotate(-20 38 30)"/><ellipse cx="62" cy="30" rx="11" ry="17" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="2" transform="rotate(20 62 30)"/><circle cx="50" cy="60" r="28" fill="#FACC15" stroke="#92400E" stroke-width="3"/><path d="M26 74q24 14 48 0M30 84q20 8 40 0" stroke="#92400E" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M40 36q-4-12-10-10M60 36q4-12 10-10" stroke="#92400E" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="40" cy="56" r="5" fill="#1F2937"/><circle cx="60" cy="56" r="5" fill="#1F2937"/><circle cx="41.5" cy="54.5" r="1.6" fill="#fff"/><circle cx="61.5" cy="54.5" r="1.6" fill="#fff"/><circle cx="32" cy="65" r="4" fill="#F87171" opacity=".55"/><circle cx="68" cy="65" r="4" fill="#F87171" opacity=".55"/><path d="M43 67q7 7 14 0" stroke="#1F2937" stroke-width="3" stroke-linecap="round" fill="none"/></svg>`;
 
     function updateAvatarUI(avatarUrl) {
@@ -757,70 +557,18 @@
       }
     }
 
-    function updateLoginState(loggedIn, userData = null) {
-      isLoggedIn = loggedIn;
-      currentUserData = userData;
-      if (window.refreshChatFab) refreshChatFab();
-
-      const overlay = document.getElementById('postAreaOverlay');
-      const authGroup = document.getElementById('authButtonsGroup');
-      const logoutBtn = document.getElementById('logoutBtn');
-      const mobileAuthGroup = document.getElementById('mobileDrawerAuthGroup');
-      const mobileLogoutBtn = document.getElementById('mobileDrawerLogoutBtn');
-
-      const profileLoggedOutView = document.getElementById('profileLoggedOutView');
-      const profileLoggedInView = document.getElementById('profileLoggedInView');
-
-      if (loggedIn && userData) {
-        
-        if (!userData.notifications) userData.notifications = [];
-        if (!userData.bookmarks) userData.bookmarks = [];
-        if (!userData.following) userData.following = [];
-
-        if (overlay) overlay.classList.add('hidden');
-        if (authGroup) authGroup.classList.add('hidden');
-        if (logoutBtn) logoutBtn.classList.remove('hidden');
-        if (mobileAuthGroup) mobileAuthGroup.classList.add('hidden');
-        if (mobileLogoutBtn) mobileLogoutBtn.classList.remove('hidden');
-
-        if (profileLoggedOutView) profileLoggedOutView.classList.add('hidden');
-        if (profileLoggedInView) profileLoggedInView.classList.remove('hidden');
-
-        document.getElementById('userHeaderInfoGroup').classList.remove('hidden');
-        document.getElementById('userNameHeader').innerText = userData.name;
-        document.getElementById('userHandleHeader').innerText = '@' + userData.handle.replace('@', '');
-        document.getElementById('userHeaderGearIcon').className = "fa-solid fa-gear text-xs text-yellow-600 ml-0.5";
-
-        updateAvatarUI(userData.avatarUrl);
-        loadPostsFromCloud();
-        loadNotifications();
-      } else {
-        localStorage.removeItem('biga_current_user');
-
-        if (overlay) overlay.classList.remove('hidden');
-        if (authGroup) authGroup.classList.remove('hidden');
-        if (logoutBtn) logoutBtn.classList.add('hidden');
-        if (mobileAuthGroup) mobileAuthGroup.classList.remove('hidden');
-        if (mobileLogoutBtn) mobileLogoutBtn.classList.add('hidden');
-
-        if (profileLoggedOutView) profileLoggedOutView.classList.remove('hidden');
-        if (profileLoggedInView) profileLoggedInView.classList.add('hidden');
-
-        document.getElementById('userHeaderInfoGroup').classList.add('hidden');
-        document.getElementById('userHeaderGearIcon').className = "fa-solid fa-right-to-bracket text-xs text-yellow-600 ml-0.5";
-
-        updateAvatarUI("");
-        loadPostsFromCloud();
-        loadNotifications();
-      }
+    // Giriş sistemi kaldırıldı: site herkese salt okunur açık.
+    function updateLoginState() {
+      isLoggedIn = false;
+      currentUserData = null;
+      loadPostsFromCloud();
+      loadNotifications();
     }
 
     async function viewUserProfileByHandle(handle) {
-      if (!isLoggedIn) {
-        alert("Profilleri görüntülemek için giriş yapmalısın.");
-        openAuthModal('login');
-        return;
-      }
+      return;
+    }
+    async function _unusedViewProfile(handle) {
       const cleanTarget = handle.replace('@', '').toLowerCase();
       
       // Eğer kendi profilimizse
@@ -860,7 +608,7 @@
       document.getElementById('profileHandleDisplay').innerText = '@' + userData.handle.replace('@', '');
       document.getElementById('profileDeptDisplay').innerText = userData.dept || 'İktisat';
       document.getElementById('profileClassDisplay').innerText = userData.classNum || '1. Sınıf';
-      document.getElementById('profileBioDisplay').innerText = userData.bio || 'Henüz bir biyografi eklenmedi. Biga kampüsünde vızıldamaya hazır! 🐝';
+      document.getElementById('profileBioDisplay').innerText = userData.bio || 'Henüz bir biyografi eklenmedi. Biga kampüsünde vızıldamaya hazır! 🐦';
       
       const isPrivate = userData.privacy === 'private';
       const badge = document.getElementById('profileAccountTypeBadge');
@@ -1013,16 +761,9 @@
       }
     }
 
-    function openAuthModal(mode) {
-      closeAuthModal();
-      if (mode === 'register') document.getElementById('registerModal').classList.remove('hidden');
-      if (mode === 'login') document.getElementById('loginModal').classList.remove('hidden');
-    }
+    function openAuthModal() {}
 
-    function closeAuthModal() { 
-      document.getElementById('loginModal').classList.add('hidden'); 
-      document.getElementById('registerModal').classList.add('hidden'); 
-    }
+    function closeAuthModal() {}
     function openProfileModal() { document.getElementById('profileModal').classList.remove('hidden'); }
     function closeProfileModal() { document.getElementById('profileModal').classList.add('hidden'); }
 
@@ -1107,7 +848,7 @@
         const newUser = {
           uid: cred.user.uid, name, handle, dept, classNum, privacy,
           avatarUrl: '', bannerUrl: '',
-          bio: 'Biga kampüsünde vızıldamaya hazır! 🐝',
+          bio: 'Biga kampüsünde vızıldamaya hazır! 🐦',
           following: [], buzzes: [], bookmarks: [], notifications: []
         };
         const batch = db.batch();
@@ -1190,7 +931,7 @@
       } catch (e) { skipped = true; }
       updateLoginState(true, nu);
       closeAuthModal();
-      alert("Eski hesabın yeni sisteme taşındı 🐝" + (skipped ? "\n(Kullanıcı adın yeni kurallara uymadığı için eski gönderilerin sahipliği taşınamadı.)" : ""));
+      alert("Eski hesabın yeni sisteme taşındı 🐦" + (skipped ? "\n(Kullanıcı adın yeni kurallara uymadığı için eski gönderilerin sahipliği taşınamadı.)" : ""));
       return true;
     }
 
@@ -1431,8 +1172,8 @@
           timeline.innerHTML = `
             <div id="emptyState" class="text-center py-12 bg-white dark:bg-gray-800 rounded-2xl border-2 border-dashed border-yellow-200 dark:border-gray-700 p-6 flex flex-col items-center justify-center">
               <i class="fa-solid fa-bug text-4xl text-yellow-500 mb-3 drop-shadow-sm"></i>
-              <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm sm:text-base">Henüz bir vızıldı yok!</h3>
-              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Kampüste ilk paylaşımı yapan sen ol.</p>
+              <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm sm:text-base">Henüz bir paylaşım yok.</h3>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Kampüsten haberler burada görünecek.</p>
             </div>
           `;
           return;
@@ -1509,7 +1250,7 @@
           if (hd.exists) { const ud = await db.collection('users').doc(hd.data().uid).get(); priv = ud.exists && ud.data().privacy === 'private'; }
         } catch (e) {}
         if (priv) { me.requested.push(t); await notifyUser(t, `${me.name} seni takip etmek istiyor 🔒`, 'followreq'); }
-        else { me.following.push(t); await notifyUser(t, `${me.name} seni takip etmeye başladı 🐝`, 'follow'); }
+        else { me.following.push(t); await notifyUser(t, `${me.name} seni takip etmeye başladı 🐦`, 'follow'); }
       }
       updateLoginState(true, me);
       await saveUserToCloud(me);
@@ -1590,11 +1331,11 @@
       newPost.innerHTML = `
         <div class="flex items-center justify-between mb-2">
           <div class="flex items-center gap-3">
-            <div onclick="viewUserProfileByHandle('${cleanHandle}')" class="w-10 h-10 rounded-full bg-amber-200 dark:bg-amber-800/80 flex items-center justify-center border border-amber-300 dark:border-amber-700 overflow-hidden cursor-pointer hover:opacity-80 transition">
+            <div class="w-10 h-10 rounded-full bg-amber-200 dark:bg-amber-800/80 flex items-center justify-center border border-amber-300 dark:border-amber-700 overflow-hidden cursor-pointer hover:opacity-80 transition">
               ${avatarHTML}
             </div>
             <div>
-              <h4 onclick="viewUserProfileByHandle('${cleanHandle}')" class="font-bold text-sm text-gray-900 dark:text-white flex items-center gap-1.5 cursor-pointer hover:underline">
+              <h4 class="font-bold text-sm text-gray-900 dark:text-white flex items-center gap-1.5 cursor-pointer hover:underline">
                 ${name}
                 ${privacy === 'private' ? '<i class="fa-solid fa-lock text-[10px] text-gray-400" title="Gizli Hesap"></i>' : ''}
               </h4>
@@ -1602,51 +1343,20 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            ${followButtonHTML}
+            
             ${isMe ? `<button onclick="deletePost('${postId}')" class="text-gray-400 hover:text-red-500 text-xs px-2 py-1 rounded-lg hover:bg-red-50 transition" title="Paylaşımı Sil"><i class="fa-solid fa-trash-can"></i></button>` : ''}
           </div>
         </div>
         <p class="text-sm text-gray-800 dark:text-gray-100 leading-relaxed">${formatTextWithMentions(text)}</p>
         ${postImageHTML}
 
-        <div class="flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-700 text-xs text-gray-500">
-          <button onclick="toggleReplyBox('${postId}')" class="hover:text-yellow-600 transition flex items-center gap-1.5 font-bold"><i class="fa-regular fa-comment"></i> Yanıtla (${replies.length})</button>
-          
-          <div class="flex items-center gap-4">
-            <button onclick="toggleLikePost('${postId}')" class="hover:text-yellow-600 transition flex items-center gap-1.5 font-bold ${isLiked ? 'text-yellow-600 dark:text-yellow-400 font-extrabold' : 'text-gray-500'}">
-              <i class="${isLiked ? 'fa-solid' : 'fa-regular'} fa-thumbs-up text-base"></i> <span>${likes.length}</span>
-            </button>
-            <button onclick="toggleBookmarkPost('${postId}')" class="hover:text-yellow-600 transition ${isBookmarked ? 'text-yellow-500 font-extrabold' : 'text-gray-500'}" title="Kaydet">
-              <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark text-base"></i>
-            </button>
-          </div>
+        <div class="flex items-center gap-4 pt-2 border-t border-gray-100 dark:border-gray-700 text-xs text-gray-500 font-bold">
+          <span class="flex items-center gap-1.5"><i class="fa-regular fa-comment"></i> ${replies.length}</span>
+          <span class="flex items-center gap-1.5"><i class="fa-regular fa-thumbs-up"></i> ${likes.length}</span>
         </div>
 
         <div id="replies-container-${postId}" class="space-y-2.5 pl-4 sm:pl-6 border-l-2 border-yellow-300 dark:border-yellow-600/50 mt-2">
           ${repliesHTML}
-        </div>
-
-        <div id="reply-box-${postId}" class="hidden pt-3 space-y-2.5 border-t border-gray-100 dark:border-gray-700 mt-2">
-          <div class="flex items-center gap-2 text-xs font-bold text-gray-500">
-            <i class="fa-solid fa-reply text-yellow-500"></i> ${name} kişisinin gönderisine yanıt atıyorsun
-          </div>
-          <textarea id="reply-input-${postId}" rows="2" placeholder="Düşüncelerini yanıt olarak vızılda..." class="w-full p-2.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-xs dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"></textarea>
-          
-          <div id="reply-img-preview-${postId}" class="hidden relative w-24 h-24 rounded-xl overflow-hidden border border-gray-200">
-            <img id="reply-img-el-${postId}" src="" class="w-full h-full object-cover">
-            <button onclick="removeReplyImage('${postId}')" class="absolute top-1 right-1 bg-black/65 text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]"><i class="fa-solid fa-xmark"></i></button>
-          </div>
-
-          <div class="flex justify-between items-center">
-            <label class="cursor-pointer text-gray-400 hover:text-yellow-600 text-sm">
-              <i class="fa-regular fa-image"></i>
-              <input type="file" id="reply-img-input-${postId}" accept="image/*" class="hidden" onchange="handleReplyImageSelect(event, '${postId}')">
-            </label>
-            <div class="flex gap-2">
-              <button onclick="toggleReplyBox('${postId}')" class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-bold rounded-lg text-xs">İptal</button>
-              <button onclick="sendReply('${postId}', '${cleanHandle}')" class="px-4 py-1.5 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-black rounded-lg text-xs shadow-sm transition-transform active:scale-95">Yanıtı Gönder 🚀</button>
-            </div>
-          </div>
         </div>
       `;
 
@@ -1758,11 +1468,11 @@
       const t = safeH(viewingUserData.handle), now = Date.now();
       const log = (currentUserData.buzzes || []).filter(b => b && b.h);
       const last = log.find(b => b.h === t);
-      if (last && now - last.ts < 600000) return alert("Bu kişiyi az önce vızzladın, biraz bekle 🐝");
-      await notifyUser(t, `${currentUserData.name} sizi vızzladı 🐝`, 'buzz');
+      if (last && now - last.ts < 600000) return alert("Bu kişiyi az önce vızzladın, biraz bekle 🐦");
+      await notifyUser(t, `${currentUserData.name} sizi vızzladı 🐦`, 'buzz');
       currentUserData.buzzes = [{ h: t, ts: now }, ...log.filter(b => b.h !== t)].slice(0, 50);
       await saveUserToCloud(currentUserData);
-      alert("Vızzladın! 🐝 Karşı tarafa bildirim gitti.");
+      alert("Vızzladın! 🐦 Karşı tarafa bildirim gitti.");
     }
 
     // ----- Sohbet, bildirim sayacı, akış filtresi, arama, harita -----
@@ -1872,7 +1582,7 @@
     function renderChatList() {
       const body = document.getElementById('chatBody');
       const chats = chatsCache.filter(c => c.lastTs).sort((a, b) => b.lastTs - a.lastTs);
-      if (!chats.length) { body.innerHTML = '<p class="text-center text-gray-400 py-8">Henüz sohbetin yok. Bir bildirimden ya da vızzlayan birinden başlatabilirsin 🐝</p>'; return; }
+      if (!chats.length) { body.innerHTML = '<p class="text-center text-gray-400 py-8">Henüz sohbetin yok. Bir bildirimden ya da vızzlayan birinden başlatabilirsin 🐦</p>'; return; }
       body.innerHTML = '';
       chats.forEach(c => {
         const other = c.members.find(m => m !== currentUserData.uid), name = (c.names || {})[other] || 'Kullanıcı', un = chatUnread(c);
@@ -1909,7 +1619,7 @@
       body.innerHTML = '';
       markChatRead(id);
       chatUnsub = db.collection('chats').doc(id).collection('messages').orderBy('ts').limitToLast(100).onSnapshot(snap => {
-        body.innerHTML = snap.empty ? '<p class="text-center text-gray-400 py-8">İlk mesajı sen yaz 🐝</p>' : '';
+        body.innerHTML = snap.empty ? '<p class="text-center text-gray-400 py-8">İlk mesajı sen yaz 🐦</p>' : '';
         let lastFromOther = false;
         snap.forEach(d => {
           const m = d.data(), mine = m.from === currentUserData.uid, el = document.createElement('div');
@@ -1953,7 +1663,7 @@
     (function () {
       const tl = document.getElementById('timeline'); if (!tl) return;
       const bar = document.createElement('div'); bar.id = 'feedBar'; bar.className = 'flex gap-2 mb-3';
-      bar.innerHTML = '<button data-m="all" onclick="setFeedMode(\'all\')">🌍 Herkes</button><button data-m="following" onclick="setFeedMode(\'following\')">🐝 Takip ettiklerim</button>';
+      bar.innerHTML = '<button data-m="all" onclick="setFeedMode(\'all\')">🌍 Herkes</button><button data-m="following" onclick="setFeedMode(\'following\')">🐦 Takip ettiklerim</button>';
       tl.parentNode.insertBefore(bar, tl); paintFeedBar();
     })();
 
@@ -1997,6 +1707,47 @@
       });
       go(places[0][1]);
     }
+  </script>
+
+  <!-- ===== "Site ele geçirildi" efekti: tasarım aynı kalır, sadece ara ara bozulma olur =====
+       Kapatmak için ENABLED = false yap. Söz kutusu (#hkBanner) HTML'de sabit durur. -->
+  <style>
+    .gull-wing{transform-box:fill-box;transform-origin:50% 100%;animation:gullFlap .55s ease-in-out infinite}
+    @keyframes gullFlap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.7)}}
+    .hk-gl{position:relative;display:inline-block}
+    .hk-gl::before,.hk-gl::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;pointer-events:none;white-space:nowrap;overflow:hidden}
+    .hk-gl.hk-burst::before{opacity:.95;color:#ef4444;animation:hkA .36s steps(2) 1}
+    .hk-gl.hk-burst::after{opacity:.95;color:#06b6d4;animation:hkB .36s steps(2) 1}
+    @keyframes hkA{0%{transform:translate(-4px,0);clip-path:inset(8% 0 62% 0)}50%{transform:translate(5px,1px);clip-path:inset(52% 0 12% 0)}100%{transform:translate(-2px,0);clip-path:inset(30% 0 34% 0)}}
+    @keyframes hkB{0%{transform:translate(4px,0);clip-path:inset(60% 0 8% 0)}50%{transform:translate(-5px,-1px);clip-path:inset(14% 0 55% 0)}100%{transform:translate(2px,0);clip-path:inset(40% 0 24% 0)}}
+    .hk-burst .hk-qtext{animation:hkJ .36s steps(3) 1}
+    @keyframes hkJ{0%,100%{transform:none;text-shadow:none}30%{transform:translateX(-5px);text-shadow:3px 0 #ef4444,-3px 0 #06b6d4}65%{transform:translateX(6px) skewX(-4deg);text-shadow:-3px 0 #ef4444,3px 0 #06b6d4}}
+  </style>
+  <script>
+  (function(){
+    var ENABLED = true;
+    if(!ENABLED || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    var els=[];
+    ['aside span.text-2xl','#mobileDrawer span.text-xl','#pageTitle'].forEach(function(s){
+      document.querySelectorAll(s).forEach(function(e){e.classList.add('hk-gl');els.push(e);});
+    });
+    var banner=document.getElementById('hkBanner'), realTitle=document.title;
+    function burst(){
+      var hit=els.filter(function(){return Math.random()<.6;});
+      hit.forEach(function(e){e.setAttribute('data-text',e.textContent.trim());e.classList.add('hk-burst');});
+      if(banner) banner.classList.add('hk-burst');
+      var t=realTitle.split('');
+      for(var k=0;k<3;k++){t[Math.floor(Math.random()*Math.min(t.length,12))]=['#','▒','/','0'][k%4];}
+      document.title=t.join('');
+      setTimeout(function(){
+        hit.forEach(function(e){e.classList.remove('hk-burst');});
+        if(banner) banner.classList.remove('hk-burst');
+        document.title=realTitle;
+      },380);
+      setTimeout(burst,3500+Math.random()*6500);
+    }
+    setTimeout(burst,900);
+  })();
   </script>
 </body>
 </html>
